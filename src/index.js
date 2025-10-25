@@ -10,7 +10,7 @@ import './styles/global.css';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
-  <BrowserRouter>
+  <BrowserRouter basename={process.env.PUBLIC_URL || "/TIME"}>
     <ConfigProvider 
       locale={zhCN}
       theme={darkTheme}
